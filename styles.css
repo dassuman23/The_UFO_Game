@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Tilt+Prism&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #ffff;
+    
+}
+
+body{
+   
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background-image: linear-gradient(red, blue);
+    height: 100vh;
+    
+}
+
+header h1{
+    position: absolute;
+    top: 0;
+    right: 15vw;
+    font-family: 'Tilt Prism', cursive;
+    font-size: 10vw;
+    color: #ffff;
+    z-index: 100;
+}
+
+.content{
+    position: absolute;
+    top: 25vh;
+    font-family: sans-serif;
+    background-color: #bff0ff;
+   border-radius: 20px;
+    
+    font-weight: 700;
+    font-size: 2vmin;
+    margin:1vh auto 5vh;
+    padding: 3vh 6.5vw 1vh;
+    border: 2px solid #ffff;
+}
+
+.content h1{
+    color: #FDDA0D;
+    font-size: 6vmin;
+    margin: 1vh 0px 2.5vh;
+}
+
+.content h2{
+    color: black;
+  margin: 1.3vh;
+}
+
+.content p{
+    
+    color: red;
+}
+
+.btn{
+    padding: 2vmin 30vw;
+    font-size: 5vw;
+    border-radius: 12px;
+    color: rgb(0, 0, 0);
+    background-image: linear-gradient(to left, red, white, blue );
+    border: 3px solid white;
+    position: absolute;
+    bottom: 7vh;
+    right: 4vw;
+    left: auto;
+    cursor: pointer;
+    font-weight: 900;
+    animation: colorChange 5s infinite;
+}
+
+@keyframes colorChange {
+    0%,50%,100%{
+        color: rgb(0, 0, 0);
+        background-image: linear-gradient(to left, red, white, blue );
+        
+    }
+    25%,75%{
+        color: #ffff;
+        background-image: linear-gradient(to left, black, red,  blue, black);
+    }
+}
+
+.btn:hover{
+    background-image: linear-gradient(to left, black, red,  blue, black);
+    color: #ffff;
+    transform: scale(1.08);
+    transition-duration: 1s;
+}
+
+footer{
+    color: #ffff;
+    position: absolute;
+    bottom: 0;
+    font-size: 1.4vw;
+    font-family: sans-serif;
+}
+
+footer h4{
+    margin-bottom: .4vh;
+    color: black;
+}
+
